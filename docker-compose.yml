@@ -24,10 +24,10 @@ services:
         - ./app/src-pwa:/app/src-pwa
         - ./app/.editorconfig:/app/.editorconfig
         - ./app/.eslintignore:/app/.eslintignore
-        - ./app/.eslintrc:/app/.eslintrc
+        - ./app/.eslintrc.js:/app/.eslintrc.js
         - ./app/.gitignore:/app/.gitignore
         - ./app/.postcssrc.js:/app/.postcssrc.js
-        - ./app/.prettierrc.js:/app/.prettierrc.js
+        - ./app/.prettierrc:/app/.prettierrc
         - ./app/README.md:/app/README.md
         - ./app/babel.config.js:/app/babel.config.js
         - ./app/package.json:/app/package.json

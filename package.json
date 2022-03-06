@@ -1,7 +1,7 @@
 {
-  "name": "quasar-test-20220306",
+  "name": "quasar-starter",
   "version": "1.0.0",
-  "description": "Test Quasar",
+  "description": "Build a PWA and Electron application based on Quasar framework.",
   "main": "index.js",
   "scripts": {
     "docker-build": "docker-compose build",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pulipuli.chen%40gmail.com@github.com/pulipulichen/Quasar-Test-20220306.git"
+    "url": "git+https://pulipuli.chen%40gmail.com@github.com/pulipulichen/Quasar-Starter.git"
   },
   "keywords": [
     "quasar"
@@ -21,7 +21,7 @@
   "author": "Pulipuli Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pulipulichen/Quasar-Test-20220306/issues"
+    "url": "https://github.com/pulipulichen/Quasar-Starter/issues"
   },
-  "homepage": "https://github.com/pulipulichen/Quasar-Test-20220306#readme"
+  "homepage": "https://github.com/pulipulichen/Quasar-Starter#readme"
 }

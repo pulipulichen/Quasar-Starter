@@ -3,9 +3,8 @@
 node_modules
 
 # Quasar core related directories
-.quasar
-/dist/pwa/*
-/dist/electron/*
+#.quasar
+#dist
 
 # Cordova related directories and files
 /src-cordova/node_modules

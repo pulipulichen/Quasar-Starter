@@ -1,2 +1,6 @@
-# Quasar-Test-20220306
-Test Quasar
+# Quasar-Starter
+Build a PWA and Electron application based on Quasar framework.
+
+# Installation
+
+

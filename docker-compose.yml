@@ -1,0 +1,50 @@
+# docker-Specify the compose version
+version: "3"
+
+services:
+  app:
+    #Build a Dockerfile in the same directory
+    build: .
+    # https://stackoverflow.com/a/71027261
+    user: ${MY_UID}:${MY_GID}
+    #You can keep the container running.
+    tty: true
+    #Mount the files in the directory to the app directory in the container
+    volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix
+        - /etc/localtime:/etc/localtime:ro
+        - /etc/hosts:/etc/hosts:ro
+        #- ./app-starter:/app
+        - ./app/.quasar:/app/.quasar
+        - ./app/.vscode:/app/.vscode
+        - ./app/public:/app/public
+        - ./app/src:/app/src
+        - ./app/dist:/app/dist
+        - ./app/src-electron:/app/src-electron
+        - ./app/src-pwa:/app/src-pwa
+        - ./app/.editorconfig:/app/.editorconfig
+        - ./app/.eslintignore:/app/.eslintignore
+        - ./app/.eslintrc:/app/.eslintrc
+        - ./app/.gitignore:/app/.gitignore
+        - ./app/.postcssrc.js:/app/.postcssrc.js
+        - ./app/.prettierrc.js:/app/.prettierrc.js
+        - ./app/README.md:/app/README.md
+        - ./app/babel.config.js:/app/babel.config.js
+        - ./app/package.json:/app/package.json
+        - ./app/quasar.conf.js:/app/quasar.conf.js
+        - ./app/tsconfig.json:/app/tsconfig.json
+        - ./app/yarn.lock:/app/yarn.lock
+    environment:
+      - DISPLAY=${DISPLAY}
+      - TZ=${TZ}
+      - LANG=${LANG}
+      #- LC_ALL=${LC_ALL} # 設了會妨礙輸入法
+      - XMODIFIERS=${XMODIFIERS}
+      - QT_IM_MODULE=${QT_IM_MODULE}
+      - GTK_IM_MODULE=${GTK_IM_MODULE}
+    # https://docs.docker.com/compose/compose-file/compose-file-v3/
+    privileged: true
+    ports:  
+      - "8080:8080"
+      # docker: host
+      

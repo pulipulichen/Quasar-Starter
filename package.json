@@ -1,0 +1,27 @@
+{
+  "name": "quasar-test-20220306",
+  "version": "1.0.0",
+  "description": "Test Quasar",
+  "main": "index.js",
+  "scripts": {
+    "docker-build": "docker-compose build",
+    "docker-bash": "bash docker-asset/docker-compose-bash.sh",
+    "dev-pwa": "bash docker-asset/docker-compose-dev-pwa.sh",
+    "build-pwa": "bash docker-asset/docker-compose-build-pwa.sh",
+    "dev-electron": "bash docker-asset/docker-compose-dev-electron.sh",
+    "build-electron": "bash docker-asset/docker-compose-build-electron.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pulipuli.chen%40gmail.com@github.com/pulipulichen/Quasar-Test-20220306.git"
+  },
+  "keywords": [
+    "quasar"
+  ],
+  "author": "Pulipuli Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pulipulichen/Quasar-Test-20220306/issues"
+  },
+  "homepage": "https://github.com/pulipulichen/Quasar-Test-20220306#readme"
+}

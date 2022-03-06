@@ -6,10 +6,11 @@
   "scripts": {
     "docker-build": "docker-compose build",
     "docker-bash": "bash docker-asset/docker-compose-bash.sh",
+    "docker-bash-root": "bash docker-asset/docker-compose-bash-root.sh",
     "dev-pwa": "bash docker-asset/docker-compose-dev-pwa.sh",
     "build-pwa": "bash docker-asset/docker-compose-build-pwa.sh",
     "dev-electron": "bash docker-asset/docker-compose-dev-electron.sh",
-    "build-electron": "bash docker-asset/docker-compose-build-electron.sh"
+    "build-appimage": "bash docker-asset/docker-compose-build-appimage.sh"
   },
   "repository": {
     "type": "git",

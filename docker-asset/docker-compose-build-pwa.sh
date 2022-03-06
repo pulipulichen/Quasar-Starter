@@ -10,5 +10,5 @@ export GTK_IM_MODULE=$GTK_IM_MODULE
 
 #docker-compose run app bash
 #docker-compose up
-docker-compose run --service-ports app quasar build -m pwa
+docker-compose run app quasar build -m pwa
 

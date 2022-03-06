@@ -55,36 +55,8 @@ RUN mkdir /app
 #RUN chown user:user /home/user/app
 WORKDIR /app
 
-COPY docker-asset/app-starter/* /app/
+# ------------------------------
 
+COPY docker-asset/app-starter/package.json /app/package.json
 RUN yarn install
-
-#RUN DEBIAN_FRONTEND=noninteractive \
-#      apt-get install -y \
-#      nano
-
-#RUN npm install -g cordova
-
-#RUN DEBIAN_FRONTEND=noninteractive \
-#      apt-get install -y \
-#      wget
-#RUN DEBIAN_FRONTEND=noninteractive \
-#      apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
-
-# https://www.electron.build/multi-platform-build#linux
-#RUN DEBIAN_FRONTEND=noninteractive \
-#      apt-get install --no-install-recommends -y libopenjp2-tools gcc-multilib g++-multilib snapd openjdk-11-jdk
-
-# https://linuxconfig.org/how-to-install-android-studio-on-ubuntu-20-04-focal-fossa-linux
-#RUN snap install android-studio --classic
-
-#COPY asset/
-
-#RUN echo "app" | echo "app" | quasar create app
-
-#RUN mkdir /app
-#RUN chown -R user:user /app
-#
-#WORKDIR /
-
-#EXPOSE 8080
+COPY docker-asset/app-starter/* /app/

@@ -10,5 +10,5 @@ export GTK_IM_MODULE=$GTK_IM_MODULE
 
 #docker-compose run app bash
 #docker-compose up
-docker-compose run app bash
+docker-compose run --service-ports app bash
 

@@ -10,6 +10,6 @@ export GTK_IM_MODULE=$GTK_IM_MODULE
 
 #docker-compose run app bash
 #docker-compose up
-docker-compose run --service-ports app quasar build -m electron
+docker-compose run app quasar build -m electron
 chmod +x app/dist/electron/Packaged/*.AppImage
 app/dist/electron/Packaged/*.AppImage

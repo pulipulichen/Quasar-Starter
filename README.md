@@ -36,6 +36,8 @@ You can edit source codes in `app/src/` to modify your application.
 1. `npm run build-pwa`
 2. You can find files in `/app/dist/pwa/` .
 
+Demo: https://pulipulichen.github.io/Quasar-Starter/
+
 ## For AppImage
 
 1. `npm run build-appimage`
